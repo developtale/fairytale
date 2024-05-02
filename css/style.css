@@ -1,9 +1,11 @@
 /********** Template CSS **********/
 :root {
-    --primary: #ff00d0;
-    --secondary: #00b6ff;
+    --primary: #FF00CF;
+    --secondary: #0BBCFF;
     --light: #F0F6FF;
     --dark: #262B47;
+    --primary-bt: #FFC140;
+    --secondary-bt: #BF30A4;
 }
 
 
@@ -93,12 +95,12 @@ h6,
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(to bottom right, var(--primary-bt), var(--secondary-bt));
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(to bottom right, var(--secondary-bt), var(--primary-bt));
 }
 
 .btn.btn-primary-gradient:hover::after,
@@ -344,12 +346,11 @@ h6,
 }
 
 .screenshot-carousel .owl-dots {
-    position: absolute;
-    top: 50%;
-    right: -30px;
+    position: relative;
+    top: 10%;
     transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -357,7 +358,7 @@ h6,
 .screenshot-carousel .owl-dot {
     position: relative;
     display: inline-block;
-    margin: 5px 0;
+    margin: 0 5px;
     width: 15px;
     height: 15px;
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
